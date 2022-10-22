@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImageTool</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_image">
+      <property name="text">
+       <string>image_label</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile_F">
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <addaction name="action_file_new"/>
+    <addaction name="action_file_open"/>
+    <addaction name="action_file_save"/>
+    <addaction name="action_file_save_as"/>
+   </widget>
+   <widget class="QMenu" name="menuTool_T">
+    <property name="title">
+     <string>Tool(&amp;T)</string>
+    </property>
+    <addaction name="action_tool_resize"/>
+   </widget>
+   <addaction name="menuFile_F"/>
+   <addaction name="menuTool_T"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_file_new">
+   <property name="text">
+    <string>New(N)</string>
+   </property>
+  </action>
+  <action name="action_file_open">
+   <property name="text">
+    <string>Open(&amp;O)</string>
+   </property>
+  </action>
+  <action name="action_file_save">
+   <property name="text">
+    <string>Save(&amp;S)</string>
+   </property>
+  </action>
+  <action name="action_file_save_as">
+   <property name="text">
+    <string>Save As(&amp;A)</string>
+   </property>
+  </action>
+  <action name="action_tool_resize">
+   <property name="text">
+    <string>Resize(&amp;R)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
